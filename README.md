@@ -1,4 +1,4 @@
-# 🎬 Stream Delay Manager
+# Stream Delay Manager
 
 <p align="center">
   <img src="https://img.shields.io/badge/OBS-WebSocket-blueviolet?style=for-the-badge&logo=obsstudio" alt="OBS WebSocket">
@@ -12,13 +12,13 @@
 </p>
 
 <p align="center">
-  <a href="https://www.obsdelay.com/">🌐 Web Original</a> •
-  <a href="https://x.com/STANIXDOR">👤 Basado en el trabajo de: @STANIXDOR</a>
+  <a href="https://www.obsdelay.com/">Web Original</a> •
+  <a href="https://x.com/STANIXDOR">Basado en el trabajo de: @STANIXDOR</a>
 </p>
 
 ---
 
-## 📥 Instalación Automática (Recomendada)
+## Instalación Automática (Recomendada)
 
 Hemos creado un instalador que hace todo el trabajo difícil por ti.
 
@@ -30,30 +30,30 @@ Hemos creado un instalador que hace todo el trabajo difícil por ti.
 1. **Descarga** este repositorio (Botón verde "Code" -> "Download ZIP") y descomprímelo.
 2. Haz **doble clic** en el archivo:
    ```
-   � INSTALAR.bat
+   INSTALAR.bat
    ```
 3. El script hará lo siguiente automáticamente:
-   - ✅ Verificará si tienes **Node.js** (y lo instalará si falta).
-   - ✅ Descargará e instalará el plugin **Source Record** de Exeldro.
-   - ✅ Pedirá **permisos de Administrador** para instalar el plugin en la carpeta de OBS (asegurando que funcione).
-   - ✅ Instalará y compilará la aplicación.
+   - Verificará si tienes **Node.js** (y lo instalará si falta).
+   - Descargará e instalará el plugin **Source Record** de Exeldro.
+   - Pedirá **permisos de Administrador** para instalar el plugin en la carpeta de OBS (asegurando que funcione).
+   - Instalará y compilará la aplicación.
 
 ---
 
-## 🚀 Cómo Iniciar la App
+## Cómo Iniciar la App
 
 Una vez instalado, para usar la herramienta día a día:
 
 1. Haz **doble clic** en:
    ```
-   ▶️ ABRIR.bat
+   ABRIR.bat
    ```
 2. Se abrirá una ventana negra (no la cierres) y la aplicación en tu navegador.
 3. Para **cerrar**, simplemente cierra la ventana negra.
 
 ---
 
-## ⚙️ Configuración en OBS Studio (IMPORTANTE)
+## Configuración en OBS Studio (IMPORTANTE)
 
 Para que el sistema funcione, necesitas configurar OBS correctamente.
 
@@ -66,7 +66,7 @@ La app se comunica con OBS mediante WebSocket.
 5. Clic en **Aplicar**.
 
 ### 2. Configurar el Plugin "Source Record"
-⚠️ **¡ATENCIÓN! ESTE ES EL PASO MÁS IMPORTANTE** ⚠️
+**¡ATENCIÓN! ESTE ES EL PASO MÁS IMPORTANTE**
 
 El plugin "Source Record" **NO aparece** en la lista de fuentes (botón `+`). Es un **FILTRO**.
 
@@ -82,7 +82,7 @@ El plugin "Source Record" **NO aparece** en la lista de fuentes (botón `+`). Es
 
 ---
 
-## 🎮 Guía de Uso
+## Guía de Uso
 
 ### 1. Conectar
 - Abre la app web.
@@ -109,21 +109,21 @@ Ve a la pestaña **Control**:
 
 ---
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 obs-delay-controller/
-├── INSTALAR.bat        # 🔧 Ejecutar PRIMERO (Instalador completo)
-├── ABRIR.bat           # ▶️ Ejecutar para USAR (Lanzador)
-├── install.ps1         # 🧠 Script lógico de instalación (PowerShell)
-├── src/                # 💻 Código fuente React
-├── dist/               # 📦 Aplicación compilada
-└── README.md           # 📖 Documentación
+├── INSTALAR.bat        # Ejecutar PRIMERO (Instalador completo)
+├── ABRIR.bat           # Ejecutar para USAR (Lanzador)
+├── install.ps1         # Script lógico de instalación (PowerShell)
+├── src/                # Código fuente React
+├── dist/               # Aplicación compilada
+└── README.md           # Documentación
 ```
 
 ---
 
-## ❓ Solución de Problemas
+## Solución de Problemas
 
 ### "El plugin Source Record no aparece en OBS"
 1. Asegúrate de haber ejecutado `INSTALAR.bat` y haber dado permisos de Administrador.
@@ -137,13 +137,13 @@ obs-delay-controller/
 
 ---
 
-## � Licencia y Créditos
+## Licencia y Créditos
 
 Este proyecto es una herramienta de código abierto bajo licencia **MIT**.
 
 - **Autor Original de la idea**: [@STANIXDOR](https://x.com/STANIXDOR)
 - **Plugin Source Record**: [Exeldro](https://obsproject.com/forum/resources/source-record.1285/)
-- **Desarrollo del Fork**: Mantenido por la comunidad.
+- **Desarrollo del Fork**: [Jaime Terrasa](https://www.linkedin.com/in/jaimeterrasa/)
 
 ---
 <p align="center">Hecho con ❤️ para streamers</p>
