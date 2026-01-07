@@ -82,6 +82,37 @@ El plugin "Source Record" **NO aparece** en la lista de fuentes (botón `+`). Es
 
 ---
 
+## Ejemplo de Configuración Real
+
+Para que te sea más fácil, aquí tienes un ejemplo de configuración probada:
+
+### Estructura de Escenas
+Crea estas 3 escenas en OBS:
+1. **CAM** (Tu cámara sola)
+2. **JUEGO** (Tu juego + cámara, la escena normal de directo)
+3. **DELAY** (La escena mágica)
+
+### Configuración de la Escena "DELAY"
+En esta escena debes añadir 2 Fuentes:
+
+1. **`JUEGO`**
+   - Agrega tu escena de "JUEGO" existente.
+   - Esta servirá de "puente" o transición mientras el delay carga.
+
+2. **`poniendo delay`**
+   - Agrega una **Fuente Multimedia** (Media Source).
+   - Desmarca la casilla "Archivo local".
+   - Esta fuente reproducirá el video retrasado que genera el plugin.
+   - **IMPORTANTE**: Mantén esta fuente desactivada (ojo cerrado 👁️) por defecto. La app la activará sola.
+
+### En la App (Pestaña Configuración)
+- **Escena Principal**: Selecciona `JUEGO`
+- **Escena Delay**: Selecciona `DELAY`
+- **Video Delay**: Selecciona la fuente `poniendo delay`
+- **Video Transición**: Selecciona la fuente `JUEGO` (dentro de la escena Delay)
+
+---
+
 ## Guía de Uso
 
 ### 1. Conectar
@@ -89,37 +120,11 @@ El plugin "Source Record" **NO aparece** en la lista de fuentes (botón `+`). Es
 - Introduce el puerto (4455 por defecto) y contraseña de OBS.
 - Clic en **Conectar a OBS**.
 
-### 2. Preparar Escenas
-Necesitas tener organizadas tus escenas en OBS:
-- **Escena Directo**: Tu escena normal sin delay.
-- **Escena Delay**: Una escena donde pondrás la fuente que reproduce el video retrasado.
-- **Fuente Puente**: Un video o imagen que se muestra durante la transición (para que no se vea negro).
-
-### 3. Configurar en la App
-Ve a la pestaña **Configuración** y selecciona:
-- **Escena Principal**: Donde estás transmitiendo ahora.
-- **Escena Delay**: A la que cambiará la app.
-- **Video Delay**: La fuente de "Media Source" que reproducirá el archivo generado por "Source Record".
-
-### 4. Activar
+### 2. Activar
 Ve a la pestaña **Control**:
 - Elige el tiempo de retraso.
 - Dale a **Activar Delay**.
 - La app gestionará la grabación, esperará el tiempo, y cambiará la escena automáticamente.
-
----
-
-## Estructura del Proyecto
-
-```
-obs-delay-controller/
-├── INSTALAR.bat        # Ejecutar PRIMERO (Instalador completo)
-├── ABRIR.bat           # Ejecutar para USAR (Lanzador)
-├── install.ps1         # Script lógico de instalación (PowerShell)
-├── src/                # Código fuente React
-├── dist/               # Aplicación compilada
-└── README.md           # Documentación
-```
 
 ---
 
